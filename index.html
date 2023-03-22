@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/index.css">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="card">
+      <div class="card__image">
+        <picture>
+          <source media="(min-width: 600px)" srcset="./assets/images/image-product-desktop.jpg">
+          <source media="(max-width: 600px)" srcset="./assets/images/image-product-mobile.jpg">
+          <img src="./assets/images/image-product-desktop.jpg" alt="perfume">
+        </picture>
+      </div>
+      <div class="card__info grid-flow">
+        <p class="card__info_name">PERFUME</p>
+        <div class="grid-flow" data-grid-type="large">
+          <h1 class="card__info_title">Gabrielle Essence Eau De Parfum</h1>
+          <p class="card__info_text"> A floral, solar and voluptuous interpretation composed by Olivier Polge,
+            Perfumer-Creator for the House of CHANEL.</p>
+          <div class="price-component">
+            <p class="price-component__new">$149.99</p>
+            <p class="price-component__old">$169.99</p>
+          </div>
+        </div>
+        <a href="#" class="button">
+          <img src="./assets/images/icon-cart.svg" alt="cart">
+          Add to Cart
+        </a>
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Danila</a>.
+  </div>
+</body>
+
+</html>
